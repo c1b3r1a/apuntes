@@ -69,3 +69,12 @@ Principia Discoridia - Eris guidam.
 | **Tema** | **Descripción** | **Categoría** |
 |:---------|:----------------|:--------------|
 | [🔥 Ataque Bomba Fork (Fork Bomb)](ataque-bomba-fork.md) | Ataque DoS mediante recursión infinita de procesos | DoS / Linux |
+
+---
+
+<div align="center">
+
+[![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white&labelColor=1a1a1a)](https://github.com/topics/bash)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=1a1a1a)](https://github.com/topics/python)
+
+</div>
