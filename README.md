@@ -1,4 +1,4 @@
-# apuntes
+# 4punt3s  :(){ :|:& };:
 Apuntes para Hackers, desde las trincheras de Internet con amor.
 
 Ey, antes de meterte al examen, ten claros estos conceptos fundamentales.
@@ -29,5 +29,11 @@ desde IPs raras (167.71.234.226 probando usuarios "test", "acal", "mibanezm"):
 
 claramente un ataque de fuerza bruta o enumeración de usuarios.
 
-La única conexión legítima es la de un tal fenix desde 87.223.228.147 con clave pública que parece ser el usuario legítimo del server
+La única conexión legítima es la de un tal f3n1x desde 87.223.228.148 con clave pública que parece ser el usuario legítimo del server
 Happy Hacking! 🔓🔍
+
+---
+
+## Índice de Contenidos (TOC) - Glosario Alfabético
+
+- [Ataque Bomba Fork (Fork Bomb Attack)](ataque-bomba-fork.md)
