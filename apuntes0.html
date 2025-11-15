@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APUNTES DE CIBERSEGURIDAD 0</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000;
+            font-family: 'Courier New', monospace;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .terminal {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #000;
+            border: 2px solid #00ff00;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+            position: relative;
+        }
+
+        .terminal-header {
+            border-bottom: 1px solid #00ff00;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            color: #00ff00;
+            font-weight: bold;
+        }
+
+        .hostname {
+            color: #00ffff;
+        }
+
+        .prompt-line {
+            margin-bottom: 20px;
+        }
+
+        .prompt {
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        .command {
+            color: #00ff00;
+        }
+
+        /* Contenedor del texto animado */
+        .typewriter {
+            color: #ffffff;
+            font-size: 14px;
+            line-height: 1.6;
+            font-family: 'Courier New', monospace;
+            overflow: hidden;
+            border-right: 3px solid #ffffff;
+            white-space: pre-wrap;
+            animation: 
+                typing 35s steps(80, end),
+                cursor 0.75s step-end infinite;
+            max-width: 100%;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes cursor {
+            from, to { border-color: transparent; }
+            50% { border-color: #ffffff; }
+        }
+
+        /* Scanlines efecto CRT */
+        .terminal::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 2px,
+                rgba(0, 255, 0, 0.02) 2px,
+                rgba(0, 255, 0, 0.02) 4px
+            );
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <div class="terminal-header">
+            Terminal - <span class="hostname">ciberia</span> - Session #1337
+        </div>
+        
+        <div class="prompt-line">
+            <span class="prompt">root@</span><span class="hostname">ciberia</span>:<span class="prompt">~#</span> <span class="command">cat /etc/motd</span>
+        </div>
+        
+        <div class="typewriter">#~root:
+
+			Ey, antes de meterte al examen, ten claros 
+			estos conceptos fundamentales.
+
+			Las 4 fases del ciberataque son tu roadmap:
+
+			primero recopilas info (OSINT/footprinting),
+			luego escaneas activamente (fingerprinting con
+			nmap), explotas vulnerabilidades encontradas y
+			finalmente haces postexplotación (backdoors,
+			exfiltración, borrar logs).
+
+			Una vulnerabilidad es un bug o fallo explotable
+			en el sistema, mientras que un vector de ataque
+			es el camino que usas para llegar a ella (como
+			un puerto SSH abierto).
+
+			La geolocalización IP te dice dónde está
+			físicamente un servidor (comandos: curl
+			ipinfo.io, geoiplookup).
+
+			Un sniffer como Wireshark "huele" paquetes de
+			red en tiempo real, perfecto para ver qué viaja
+			sin cifrar.
+
+			Nmap es tu navaja suiza para mapear redes (fase
+			1: reconocimiento).
+
+			Tor anonimiza tu tráfico rebotándolo por nodos
+			worldwide, ideal cuando no quieres dejar
+			rastro.
+
+			Una VPN cifra tu conexión y cambia tu IP
+			aparente, protegiéndote en redes públicas.
+
+			El fingerprinting (huella digital) identifica
+			tu navegador, OS, plugins... básicamente, te
+			delata.
+
+			Y esos logs del auth.log que verá en el examen
+			;-) muestran intentos de login SSH fallidos
+			desde IPs raras (167.71.234.226 probando
+			usuarios "test", "acal", "mibanezm"):
+			claramente un ataque de fuerza bruta o
+			enumeración de usuarios.
+
+			La única conexión legítima es la de un tal
+			fenix desde 87.223.228.147 con clave pública
+			que parece ser el usuario legítimo del server
+
+			Happy Hacking! 🔓🔍</div>
+    </div>
+</body>
+</html>
