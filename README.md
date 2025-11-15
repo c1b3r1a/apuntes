@@ -74,7 +74,11 @@ Principia Discoridia - Eris guidam.
 
 <div align="center">
 
-[![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white&labelColor=1a1a1a)](https://github.com/topics/bash)
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=1a1a1a)](https://github.com/topics/python)
+<a href="https://github.com/topics/bash">
+  <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white&labelColor=1a1a1a" alt="Bash">
+</a>
+<a href="https://github.com/topics/python">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=1a1a1a" alt="Python">
+</a>
 
 </div>
