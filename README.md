@@ -1,7 +1,26 @@
 # 4punt3s  :(){ :|:& };:
-Apuntes para Hackers, desde las trincheras de Internet con amor.
+> 💀 Apuntes para Hackers, desde las trincheras de Internet con amor.
 
-Ey, antes de meterte al examen, ten claros estos conceptos fundamentales.
+<div align="center">
+
+![Hacking](https://img.shields.io/badge/🔓-Hacking-red?style=for-the-badge&labelColor=1a1a1a)
+![Linux](https://img.shields.io/badge/🐧-Linux-blue?style=for-the-badge&labelColor=1a1a1a)
+![Security](https://img.shields.io/badge/🛡️-Security-green?style=for-the-badge&labelColor=1a1a1a)
+
+</div>
+
+---
+
+## 📋 Tabla de Contenidos
+
+- [1er Trimestre - Conceptos Fundamentales](#1er-trimestre---conceptos-fundamentales)
+- [2º Trimestre - Glosario Técnico](#2º-trimestre---glosario-técnico)
+
+---
+
+## 1er Trimestre - Conceptos Fundamentales
+
+Ey, antes de meterte al examen-t3st, ten claros estos conceptos fundamentales.
 
 Las **4 fases del ciberataque** son tu roadmap:
 
@@ -32,8 +51,21 @@ claramente un ataque de fuerza bruta o enumeración de usuarios.
 La única conexión legítima es la de un tal f3n1x desde 87.223.228.148 con clave pública que parece ser el usuario legítimo del server
 Happy Hacking! 🔓🔍
 
+
+## 2º Trimestre - Glosario Técnico
+
+Lorem Ipsum Torvalds, nihil Sine RMS.
+Dennis Ritchie dixit, ora et jakea.
+ESR, says... la cathedral an bazaar.
+Ava Lovelace, in Memoriam.
+Grace Hopper magnificat.
+Opus technotronic musica est.
+Principia Discoridia - Eris guidam.
+
 ---
 
-## Índice de Contenidos (TOC) - Glosario Alfabético
+### 📚 Glosario Alfabético
 
-- [Ataque Bomba Fork (Fork Bomb Attack)](ataque-bomba-fork.md)
+| **Tema** | **Descripción** | **Categoría** |
+|:---------|:----------------|:--------------|
+| [🔥 Ataque Bomba Fork (Fork Bomb)](ataque-bomba-fork.md) | Ataque DoS mediante recursión infinita de procesos | DoS / Linux |
