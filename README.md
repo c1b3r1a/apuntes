@@ -14,7 +14,7 @@
 
 Ey, antes de meterte al examen-t3st, ten claros estos conceptos fundamentales.
 
-Las **4 fases del ciberataque** son tu roadmap:
+Las **[4 fases del ciberataque](las-4-Fases-del-ciberataque.md)** son tu roadmap:
 
 primero recopilas info (OSINT/footprinting), luego escaneas activamente (fingerprinting con nmap),
 explotas vulnerabilidades encontradas
