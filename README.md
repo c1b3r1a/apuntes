@@ -28,19 +28,39 @@ primero recopilas info (OSINT/footprinting), luego escaneas activamente (fingerp
 explotas vulnerabilidades encontradas
 y finalmente haces postexplotación (backdoors, exfiltración, borrar logs).
 
-Una **vulnerabilidad** es un bug o fallo explotable en el sistema, mientras que un **vector de ataque** es el camino que usas para llegar a ella (como un puerto SSH abierto).
+### Vulnerabilidad vs Vector de Ataque
 
-La **geolocalización IP** te dice dónde está físicamente un servidor (comandos: curl ipinfo.io, geoiplookup).
+Una **[vulnerabilidad](https://es.wikipedia.org/wiki/Vulnerabilidad_inform%C3%A1tica)** es un fallo o debilidad explotable en un sistema, aplicación o servicio.
 
-Un **sniffer** como Wireshark "huele" paquetes de red en tiempo real, perfecto para ver qué viaja sin cifrar.
+Ejemplos comunes:
+- **[SQL Injection](https://es.wikipedia.org/wiki/Inyecci%C3%B3n_SQL)** (SQLi): inyección de código SQL malicioso en formularios web
+- **[Cross-Site Scripting](https://es.wikipedia.org/wiki/Cross-site_scripting)** (XSS): inyección de scripts en páginas web que ejecutan código en el navegador de la víctima
+- **[Buffer Overflow](https://es.wikipedia.org/wiki/Desbordamiento_de_buffer)**: desbordamiento de memoria que permite ejecutar código arbitrario
+- **Contraseñas débiles**: credenciales fáciles de adivinar o crackear
 
-**Nmap** es tu navaja suiza para mapear redes (fase 1: reconocimiento).
+Por otro lado, un **vector de ataque** es el método, camino o canal que utiliza el atacante para explotar esa vulnerabilidad.
 
-**Tor** anonimiza tu tráfico rebotándolo por nodos worldwide, ideal cuando no quieres dejar rastro.
+Ejemplos de vectores:
+- Puerto [SSH](https://es.wikipedia.org/wiki/Secure_Shell) (22) abierto → permite ataques de fuerza bruta contra contraseñas débiles
+- Formulario de login web → punto de entrada para SQLi o credential stuffing
+- Campo de comentarios sin sanitizar → vector para inyectar XSS
+- Adjunto de email malicioso → vector para entregar malware/ransomware
 
-Una **VPN** cifra tu conexión y cambia tu IP aparente, protegiéndote en redes públicas.
+**Relación**: La vulnerabilidad es la **debilidad**, el vector es la **ruta de acceso** a esa debilidad.
 
-El **fingerprinting** (huella digital) identifica tu navegador, OS, plugins... básicamente, te delata.
+### Herramientas Esenciales
+
+**[Geolocalización IP](https://es.wikipedia.org/wiki/Geolocalizaci%C3%B3n)** → Te dice dónde está físicamente un servidor (comandos: `curl ipinfo.io`, `geoiplookup`)
+
+**[Sniffer](https://es.wikipedia.org/wiki/Analizador_de_paquetes)** → Como [Wireshark](https://es.wikipedia.org/wiki/Wireshark) "huele" paquetes de red en tiempo real, perfecto para ver qué viaja sin cifrar.
+
+**[Nmap](https://es.wikipedia.org/wiki/Nmap)** → Tu navaja suiza para mapear redes (fase 1: reconocimiento).
+
+**[Tor](https://es.wikipedia.org/wiki/Tor_(red_de_anonimato))** → Anonimiza tu tráfico rebotándolo por nodos worldwide, ideal cuando no quieres dejar rastro.
+
+**[VPN](https://es.wikipedia.org/wiki/Red_privada_virtual)** → Cifra tu conexión y cambia tu IP aparente, protegiéndote en redes públicas.
+
+**[Fingerprinting](https://en.wikipedia.org/wiki/Device_fingerprint)** → (huella digital) identifica tu navegador, OS, plugins... básicamente, te delata.
 
 Y esos logs del auth.log que verá  en el examen ;-) muestran intentos de login SSH fallidos
 
