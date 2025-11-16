@@ -1,14 +1,6 @@
  # 4punt3s  :(){ :|:& };:
 > 💀 Apuntes para Hackers, desde las trincheras de Internet con amor.
 
-<div align="center">
-
-<img src="https://img.shields.io/badge/🔓-Hacking-red?style=for-the-badge&labelColor=1a1a1a" alt="Hacking">
-<img src="https://img.shields.io/badge/🐧-Linux-blue?style=for-the-badge&labelColor=1a1a1a" alt="Linux">
-<img src="https://img.shields.io/badge/🛡️-Security-green?style=for-the-badge&labelColor=1a1a1a" alt="Security">
-
-</div>
-
 ---
 
 ## 📋 Tabla de Contenidos
@@ -77,6 +69,10 @@ Principia Discoridia - Eris guidam.
 ---
 
 <div align="center">
+
+<img src="https://img.shields.io/badge/🔓-Hacking-red?style=for-the-badge&labelColor=1a1a1a" alt="Hacking">
+<img src="https://img.shields.io/badge/🐧-Linux-blue?style=for-the-badge&labelColor=1a1a1a" alt="Linux">
+<img src="https://img.shields.io/badge/🛡️-Security-green?style=for-the-badge&labelColor=1a1a1a" alt="Security">
 
 <a href="https://github.com/topics/bash">
   <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white&labelColor=1a1a1a" alt="Bash">
