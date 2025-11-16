@@ -121,10 +121,32 @@
 			finalmente haces postexplotación (backdoors,
 			exfiltración, borrar logs).
 
-			Una vulnerabilidad es un bug o fallo explotable
-			en el sistema, mientras que un vector de ataque
-			es el camino que usas para llegar a ella (como
-			un puerto SSH abierto).
+			¿Qué es una vulnerabilidad? Es un fallo o debilidad
+			explotable en un sistema, aplicación o servicio.
+
+			¿Algunos ejemplos comunes?:
+			- SQL Injection (SQLi): inyección de código SQL
+			malicioso en formularios web
+			- Cross-Site Scripting (XSS): inyección de scripts en
+			páginas web que ejecutan código en el navegador de la víctima
+			- Buffer Overflow: desbordamiento de memoria que permite
+			ejecutar código arbitrario
+			- Contraseñas débiles: credenciales fáciles de adivinar o crackear
+
+			Por otro lado, un vector de ataque es el método, camino o canal
+			que utiliza el atacante para explotar esa vulnerabilidad.
+
+			¿Quieres ejemplos de vectores? Un puerto SSH (22) abierto →
+			permite ataques de fuerza bruta contra contraseñas débiles
+			El formulario de login web suele ser punto de entrada para SQLi o credential stuffing.
+			¿Una Web que contiene campos de comentarios sin sanitizar?
+			Huele a vector para inyectar XSS.
+			AH, y un adjunto de email malicioso es el vector idóneo para
+			entregar malware/ransomware usado por cibercriminales.
+
+			Te preguntarás...¿Que relación hay? La vulnerabilidad es la debilidad,
+			el vector es la ruta de acceso a esa debilidad.
+
 
 			La geolocalización IP te dice dónde está
 			físicamente un servidor (comandos: curl
