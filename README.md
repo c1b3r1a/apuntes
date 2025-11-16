@@ -3,9 +3,9 @@
 
 <div align="center">
 
-![Hacking](https://img.shields.io/badge/🔓-Hacking-red?style=for-the-badge&labelColor=1a1a1a)
-![Linux](https://img.shields.io/badge/🐧-Linux-blue?style=for-the-badge&labelColor=1a1a1a)
-![Security](https://img.shields.io/badge/🛡️-Security-green?style=for-the-badge&labelColor=1a1a1a)
+<img src="https://img.shields.io/badge/🔓-Hacking-red?style=for-the-badge&labelColor=1a1a1a" alt="Hacking">
+<img src="https://img.shields.io/badge/🐧-Linux-blue?style=for-the-badge&labelColor=1a1a1a" alt="Linux">
+<img src="https://img.shields.io/badge/🛡️-Security-green?style=for-the-badge&labelColor=1a1a1a" alt="Security">
 
 </div>
 

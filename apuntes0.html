@@ -54,29 +54,14 @@
             color: #00ff00;
         }
 
-        /* Contenedor del texto animado */
+        /* Contenedor del texto sin animación */
         .typewriter {
-            color: #ffffff;
+            color: #00ff00;
             font-size: 14px;
             line-height: 1.6;
             font-family: 'Courier New', monospace;
-            overflow: hidden;
-            border-right: 3px solid #ffffff;
             white-space: pre-wrap;
-            animation: 
-                typing 35s steps(80, end),
-                cursor 0.75s step-end infinite;
-            max-width: 100%;
-        }
-
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-
-        @keyframes cursor {
-            from, to { border-color: transparent; }
-            50% { border-color: #ffffff; }
+            width: 100%;
         }
 
         /* Scanlines efecto CRT */
@@ -108,80 +93,47 @@
             <span class="prompt">root@</span><span class="hostname">ciberia</span>:<span class="prompt">~#</span> <span class="command">cat /etc/motd</span>
         </div>
         
-        <div class="typewriter">#~root:
+        <div class="typewriter">Ey, antes de meterte al examen, ten claros estos conceptos fundamentales.
 
-			Ey, antes de meterte al examen, ten claros 
-			estos conceptos fundamentales.
+Las 4 fases del ciberataque son tu roadmap:
 
-			Las 4 fases del ciberataque son tu roadmap:
+primero recopilas info (OSINT/footprinting), luego escaneas activamente (fingerprinting con nmap), explotas vulnerabilidades encontradas y finalmente haces postexplotación (backdoors, exfiltración, borrar logs).
 
-			primero recopilas info (OSINT/footprinting),
-			luego escaneas activamente (fingerprinting con
-			nmap), explotas vulnerabilidades encontradas y
-			finalmente haces postexplotación (backdoors,
-			exfiltración, borrar logs).
+¿Qué es una vulnerabilidad? Es un fallo o debilidad explotable en un sistema, aplicación o servicio.
 
-			¿Qué es una vulnerabilidad? Es un fallo o debilidad
-			explotable en un sistema, aplicación o servicio.
+¿Algunos ejemplos comunes?:
+- SQL Injection (SQLi): inyección de código SQL malicioso en formularios web
+- Cross-Site Scripting (XSS): inyección de scripts en páginas web que ejecutan código en el navegador de la víctima
+- Buffer Overflow: desbordamiento de memoria que permite ejecutar código arbitrario
+- Contraseñas débiles: credenciales fáciles de adivinar o crackear
 
-			¿Algunos ejemplos comunes?:
-			- SQL Injection (SQLi): inyección de código SQL
-			malicioso en formularios web
-			- Cross-Site Scripting (XSS): inyección de scripts en
-			páginas web que ejecutan código en el navegador de la víctima
-			- Buffer Overflow: desbordamiento de memoria que permite
-			ejecutar código arbitrario
-			- Contraseñas débiles: credenciales fáciles de adivinar o crackear
+Por otro lado, un vector de ataque es el método, camino o canal que utiliza el atacante para explotar esa vulnerabilidad.
 
-			Por otro lado, un vector de ataque es el método, camino o canal
-			que utiliza el atacante para explotar esa vulnerabilidad.
+¿Quieres ejemplos de vectores? Un puerto SSH (22) abierto → permite ataques de fuerza bruta contra contraseñas débiles
+El formulario de login web suele ser punto de entrada para SQLi o credential stuffing.
+¿Una Web que contiene campos de comentarios sin sanitizar? Huele a vector para inyectar XSS.
+AH, y un adjunto de email malicioso es el vector idóneo para entregar malware/ransomware usado por cibercriminales.
 
-			¿Quieres ejemplos de vectores? Un puerto SSH (22) abierto →
-			permite ataques de fuerza bruta contra contraseñas débiles
-			El formulario de login web suele ser punto de entrada para SQLi o credential stuffing.
-			¿Una Web que contiene campos de comentarios sin sanitizar?
-			Huele a vector para inyectar XSS.
-			AH, y un adjunto de email malicioso es el vector idóneo para
-			entregar malware/ransomware usado por cibercriminales.
-
-			Te preguntarás...¿Que relación hay? La vulnerabilidad es la debilidad,
-			el vector es la ruta de acceso a esa debilidad.
+Te preguntarás...¿Que relación hay? La vulnerabilidad es la debilidad, el vector es la ruta de acceso a esa debilidad.
 
 
-			La geolocalización IP te dice dónde está
-			físicamente un servidor (comandos: curl
-			ipinfo.io, geoiplookup).
+La geolocalización IP te dice dónde está físicamente un servidor (comandos: curl ipinfo.io, geoiplookup).
 
-			Un sniffer como Wireshark "huele" paquetes de
-			red en tiempo real, perfecto para ver qué viaja
-			sin cifrar.
+Un sniffer como Wireshark "huele" paquetes de red en tiempo real, perfecto para ver qué viaja sin cifrar.
 
-			Nmap es tu navaja suiza para mapear redes (fase
-			1: reconocimiento).
+Nmap es tu navaja suiza para mapear redes (fase 1: reconocimiento).
 
-			Tor anonimiza tu tráfico rebotándolo por nodos
-			worldwide, ideal cuando no quieres dejar
-			rastro.
+Tor anonimiza tu tráfico rebotándolo por nodos worldwide, ideal cuando no quieres dejar rastro.
 
-			Una VPN cifra tu conexión y cambia tu IP
-			aparente, protegiéndote en redes públicas.
+Una VPN cifra tu conexión y cambia tu IP aparente, protegiéndote en redes públicas.
 
-			El fingerprinting (huella digital) identifica
-			tu navegador, OS, plugins... básicamente, te
-			delata.
+El fingerprinting (huella digital) identifica tu navegador, OS, plugins... básicamente, te delata.
 
-			Y esos logs del auth.log que verá en el examen
-			;-) muestran intentos de login SSH fallidos
-			desde IPs raras (167.71.234.226 probando
-			usuarios "test", "acal", "mibanezm"):
-			claramente un ataque de fuerza bruta o
-			enumeración de usuarios.
+Y esos logs del auth.log que verá en el examen ;-) muestran intentos de login SSH fallidos desde IPs raras (167.71.234.226 probando usuarios "test", "acal", "mibanezm"): claramente un ataque de fuerza bruta o enumeración de usuarios.
 
-			La única conexión legítima es la de un tal
-			fenix desde 87.223.228.147 con clave pública
-			que parece ser el usuario legítimo del server
+La única conexión legítima es la de un tal fenix desde 87.223.228.147 con clave pública que parece ser el usuario legítimo del server
 
-			Happy Hacking! 🔓🔍</div>
+Happy Hacking! 🔓🔍</div>
     </div>
 </body>
 </html>
